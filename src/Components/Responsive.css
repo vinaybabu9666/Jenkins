@@ -1,0 +1,820 @@
+---------------------------------
+  P
+  R
+  O
+  F
+  I
+  L
+  E
+  -----------------------------
+  .container1 {
+  padding: 0px;
+}
+
+.user-info {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  table-layout: auto; /* Allows for dynamic adjustment of column widths */
+  white-space: nowrap;
+  border-collapse: collapse;
+  font-size: 1rem; /* Increase overall font size */
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 1.5rem; /* Increase padding for better spacing */
+}
+
+@media (max-width: 1200px) {
+  .container1 {
+    padding: 15px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem;
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .container1 {
+    padding: 10px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.85rem;
+    padding: 0.8rem; /* Further adjust padding for better readability */
+  }
+
+  .user-info button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Additional responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .container1 {
+    padding: 5px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.8rem;
+    padding: 0.7rem; /* Adjust padding for small screens */
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .user-info table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-responsive {
+    border: 0;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem; /* Adjust padding for the smallest screens */
+    font-size: 0.75rem;
+  }
+
+  .user-info button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap; /* Allows pagination items to wrap if necessary */
+    justify-content: center; /* Center the pagination within its container */
+    align-items: baseline;
+    padding: 10px; /* Add some padding for spacing */
+    margin-top: 20px; /* Adjust margin to position pagination properly */
+  }
+
+  .pagination .page-item {
+    margin: 0 5px; /* Add some horizontal spacing between pagination items */
+  }
+
+  .pagination .page-link {
+    padding: 5px 10px; /* Adjust padding for pagination links */
+    font-size: 1rem; /* Set a readable font size */
+  }
+
+  @media (max-width: 768px) {
+    .pagination {
+      justify-content: center; /* Ensure pagination stays centered on smaller screens */
+      margin-top: 15px;
+    }
+
+    .pagination .page-item {
+      margin: 5px 2px; /* Reduce spacing on smaller screens */
+    }
+
+    .pagination .page-link {
+      padding: 4px 8px; /* Reduce padding for smaller screens */
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .pagination {
+      justify-content: space-between; /* Distribute items evenly on the smallest screens */
+    }
+
+    .pagination .page-item {
+      margin: 3px 1px; /* Further reduce spacing for the smallest screens */
+    }
+
+    .pagination .page-link {
+      padding: 1px 3px; /* Further reduce padding for the smallest screens */
+      font-size: 0.85rem; /* Adjust font size for the smallest screens */
+    }
+  }
+}
+
+/* Ensure the body doesn't scroll horizontally */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.child-component {
+  flex: 1;
+  overflow-x: auto; /* Ensure that only the table can scroll horizontally */
+}
+
+.content {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden; /* Hide any unnecessary horizontal overflow */
+}
+
+-----------------------------------
+  F
+  O
+  O
+  T
+  E
+  R
+  ---------------------------------------------
+  html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body:not(.home-page) {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: auto; /* Pushes the footer to the bottom */
+  width: 100%; /* Ensure the footer takes full width */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of links into multiple lines */
+  justify-content: center;
+  gap: 10px; /* Space between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f6ce9a;
+  white-space: nowrap; /* Prevent wrapping of individual link text */
+}
+.footer-links :hover {
+  color: #f9841b;
+}
+
+.footer-links .textcolor {
+  color: #6c757d;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Hidden by default */
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.back-to-top:hover {
+  background: #0056b3;
+}
+
+/* Ensure the footer fits into the viewport */
+body:not(.home-page) #footer {
+  margin-top: auto; /* Push footer to the bottom */
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: row; /* Keep links horizontal on smaller screens */
+    justify-content: center;
+  }
+
+  .footer-links a {
+    margin-bottom: 5px; /* Space between links */
+  }
+
+  .back-to-top {
+    display: block; /* Show the back-to-top button on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #footer {
+    padding: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .back-to-top {
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+  }
+}
+
+------------------------------------
+  H
+  E
+  A
+  D
+  E
+  R
+  -----------------------------------------
+  #header {
+  background-color: #f6ce9a;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container to hold logo and navigation */
+/* .container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* Logo styling */
+#logo img {
+  max-height: 70px;
+}
+
+/* Navigation menu container */
+#nav-menu-container {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation menu list items */
+.nav-menu li {
+  position: relative;
+}
+
+/* Navigation links */
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  display: block;
+}
+
+/* Mobile styles */
+/* -------------   WORKING MOBILE MENU   ----------------*/
+@media (max-width: 768px) {
+  #header {
+    padding: 10px 15px;
+    padding-bottom: 80px;
+  }
+
+  .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #nav-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 18px;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(221, 214, 216, 0.92);
+    left: -260px;
+    width: 260px;
+    overflow-y: auto;
+    transition: 0.4s;
+  }
+
+  #nav-menu-container.active {
+    display: block;
+    background-color: #76152e;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    overflow-y: auto;
+    padding-top: 60px;
+  }
+
+  #nav-menu-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #nav-menu-container ul li {
+    position: relative;
+  }
+
+  #nav-menu-container ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #nav-menu-container ul li a:hover {
+    color: #fff;
+  }
+
+  #nav-menu-container ul li li {
+    padding-left: 30px;
+  }
+
+  #nav-menu-container ul .menu-has-children i {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  #nav-menu-container ul .menu-has-children i.fa-chevron-up {
+    color: #f9841b;
+  }
+
+  #nav-menu-container ul .menu-has-children li a {
+    text-transform: none;
+  }
+
+  #nav-menu-container ul .menu-item-active {
+    color: #f9841b;
+  }
+  #nav-menu-container-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: relative;
+    background: rgba(241, 237, 237, 0.7);
+    /* display: none; */
+    display: none !important;
+  }
+
+  /* Mobile Nav body classes */
+  body.nav-menu-container-active {
+    overflow: hidden;
+  }
+
+  body.nav-menu-container-active #mobile-nav {
+    left: 0;
+  }
+
+  body.nav-menu-container-active #mobile-nav-toggle {
+    color: #fff;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    padding: 10px;
+    display: block;
+  }
+
+  .menu-has-children ul {
+    position: static;
+    box-shadow: none;
+    display: none; /* Hide dropdowns by default */
+  }
+
+  .menu-has-children.active ul {
+    display: block; /* Show dropdown when active */
+  }
+
+  .nav-menu .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem; /* Font size for profile info */
+  }
+}
+
+/* Mobile menu (hamburger icon) */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1001;
+  margin: 40px 10px 0 0;
+  border: 0;
+  background-color: #76152e;
+  font-size: 24px;
+  display: none; /* Ensure it only appears in mobile view */
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  #mobile-nav-toggle {
+    display: block; /* Show hamburger in mobile view */
+  }
+
+  #nav-menu-container {
+    display: block; /* Hide normal menu in mobile view */
+  }
+
+  #mobile-nav-toggle.active + #nav-menu-container {
+    display: block;
+    background-color: #76152e;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    overflow-y: auto;
+    padding-top: 60px;
+  }
+
+  .nav-menu > li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-menu > li > a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .menu-has-children > ul {
+    display: none;
+  }
+
+  .menu-has-children.active > ul {
+    display: block;
+  }
+}
+
+-------------------------------------
+  L
+  O
+  G
+  I
+  N
+  --------------------------------------
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Responsive text alignment */
+.section-headerin h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Responsive row setup */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Adjustments for the form container */
+.about-col {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.w-lg-500px {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsive form input fields */
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* Responsive button styling */
+.btn {
+  /* width: 100%; */
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.text-center h4 {
+  font-size: 1.2rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 575.98px) {
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .bigtext {
+    font-size: 1.4rem;
+  }
+
+  .text-center h4 {
+    font-size: 1rem;
+  }
+}
+
+-----------------------------------------
+  R
+  E
+  G
+  I
+  S
+  T
+  E
+  R
+  ------------------------------------------
+  .container {
+  max-width: 100%;
+  padding: 15px;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .form-control {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .bigtext {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .w-lg-500px {
+    width: 100% !important;
+    padding: 20px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 577px) and (max-width: 768px) {
+  .form-control {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .bigtext {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .w-lg-500px {
+    width: 100% !important;
+    padding: 30px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .form-control {
+    font-size: 18px;
+  }
+
+  .btn-primary {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .bigtext {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .w-lg-500px {
+    width: 500px;
+    padding: 40px;
+  }
+}
+
+------------------------------------  I C O N S  ------------------------------------
+/* Container for social media icons */
+.social-media-icons {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Icon wrapper for individual icons */
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hover effect */
+.icon-wrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .social-media-icons {
+    left: 50%;
+    top: auto;
+    bottom: 10px;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media-icons {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .icon-wrapper {
+    width: 25px;
+    height: 25px;
+  }
+}

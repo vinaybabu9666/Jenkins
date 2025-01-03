@@ -1,0 +1,42 @@
+
+html,
+body {
+    height: 100%;
+}
+
+
+.container-box
+{
+	display:inline-block;
+	padding-bottom:30px;
+	padding-top:0px;
+	padding-left:30px;
+	padding-right:10px;
+	font-family: "Montserrat", sans-serif;
+  
+	background-image:url(../img/regis1.png);
+	background-position:right top; 
+	  
+position: fixed !important;
+  	top: 13%;
+	height:155px;
+	background-repeat:no-repeat;
+	right:0;
+	 z-index: 1;
+
+}
+
+.modal-content
+{
+	background: rgba(255, 255, 255);	 z-index: 0;
+}
+
+
+.rotated
+{
+	
+    transform-origin: top left;   z-index: 55;
+}
+
+
+

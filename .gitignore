@@ -1,0 +1,11 @@
+# Ignore node_modules
+node_modules/
+.env
+build/
+
+# Ignore pack files
+*.pack
+
+# Ignore large files (specific extensions or directories)
+*.pdf
+build/lib/

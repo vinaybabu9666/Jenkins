@@ -1,0 +1,75 @@
+------------------------------- U S E R  P R O F I L E  -----------------------------
+  /* Base styles (for non-responsive view) */
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .sidebar {
+    width: 25%;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .profile-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .profile-picture img {
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  
+    .side-tabs {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .side-tabs li {
+      display: inline-block;
+      padding: 10px;
+      flex: 1 0 auto;
+      text-align: center;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-picture img {
+      max-width: 120px;
+    }
+  
+    .side-tabs li {
+      padding: 8px;
+    }
+  
+    .content {
+      padding: 5px;
+    }
+  }
+  

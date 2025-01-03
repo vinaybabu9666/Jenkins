@@ -1,0 +1,95 @@
+{
+    "user": {
+      "id": "12345",
+      "firstName": "JPN Chowdary",
+      "lastName": "S",
+      "email": "jayaprakashnarayana@gmail.com",
+      "phone": "+91 9848022338",
+      "address": {
+        "street": "123 Main St",
+        "city": "vijayawada",
+        "state": "ANdhra Pradhesh",
+        "zip": "520001",
+        "country": "India"
+      },
+      "profilePicture": "/img/p2.jpg"
+    },
+    "accounts": [
+      {
+        "accountType": "Gold Loan",
+        "accountNumber": "GL1234567890",
+        "balance": 5000,
+        "interestRate": 5.0,
+        "loanAmount": 10000,
+        "loanTenure": "12 months",
+        "dueDate": "2024-12-31"
+      },
+      {
+        "accountType": "Vehicle Loan",
+        "accountNumber": "VL1234567890",
+        "balance": 15000,
+        "interestRate": 7.5,
+        "loanAmount": 25000,
+        "loanTenure": "24 months",
+        "dueDate": "2025-06-30"
+      }
+    ],
+    "transactionHistory": [
+      {
+        "id": 1,
+        "date": "2024-02-08",
+        "description": "Grocery Store",
+        "amount": -50.45,
+        "balance": 950.55,
+        "type": "debit",
+        "account_id": 123456
+      },
+      {
+        "id": 2,
+        "date": "2024-02-09",
+        "description": "Salary",
+        "amount": 1500.00,
+        "balance": 2450.55,
+        "type": "credit",
+        "account_id": 123456
+      },
+      {
+        "id": 3,
+        "date": "2024-02-111",
+        "description": "Coffee Shop",
+        "amount": -3.75,
+        "balance": 2446.80,
+        "type": "debit",
+        "account_id": 123456
+      },
+      {
+        "id": 4,
+        "date": "2024-02-10",
+        "description": "Shoping mall",
+        "amount": 5000,
+        "balance": 2446.80,
+        "type": "debit",
+        "account_id": 123456
+      }
+    ],
+    "notifications": [
+      {
+        "id": "1",
+        "date": "2024-07-01",
+        "message": "Your Gold Loan payment is due on 2024-12-31.",
+        "read": false
+      },
+      {
+        "id": "2",
+        "date": "2024-06-15",
+        "message": "Your Vehicle Loan payment is due on 2025-06-30.",
+        "read": true
+      }
+    ],
+    "settings": {
+      "emailNotifications": true,
+      "smsNotifications": true,
+      "twoFactorAuthentication": true
+    }
+  }
+  
